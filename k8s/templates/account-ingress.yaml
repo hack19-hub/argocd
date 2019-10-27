@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: {{ .Values.appName }}-ingress
-  app: {{ .Values.appName }}
   labels:
     app: {{ .Values.appName }}
   annotations:
