@@ -6,7 +6,7 @@ appName: service-account
 
 replicaCount: 1
 
-port: 8080
+port: 80
 
 image:
   repository: nginx
@@ -17,7 +17,7 @@ image:
 service:
   type: ClusterIP
   port: 80
-  targetPort: 8080
+  targetPort: 80
 
 ingress:
   hosts:
