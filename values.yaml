@@ -1,0 +1,30 @@
+# Default values for sample.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+appName: service-account
+
+replicaCount: 1
+
+port: 8080
+
+image:
+  repository: nginx
+  tag: stable
+  pullPolicy: IfNotPresent
+
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080
+
+ingress:
+  hosts:
+    - host: vijay.example.com
+      paths: /
+
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
