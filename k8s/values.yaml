@@ -4,7 +4,7 @@
 
 appName: service-account
 
-replicaCount: 5
+replicaCount: 10
 
 port: 80
 
