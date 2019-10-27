@@ -9,8 +9,8 @@ replicaCount: 1
 port: 80
 
 image:
-  repository: httpd
-  tag: latest
+  repository: nginx
+  tag: stable
   pullPolicy: IfNotPresent
 
 
